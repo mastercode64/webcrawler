@@ -14,6 +14,8 @@ public class Webcrawler {
 		
 		
 		List<Book> books = service.getBooksFromUrl(url);
+		
+		System.out.println("\nListing all books\n");
 		books.forEach(b -> {
 			System.out.println(b.toString());
 		});
